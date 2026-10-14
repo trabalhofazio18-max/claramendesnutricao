@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página não encontrada | Clara Mendes Nutrição</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#5E7F62">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon.png">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/outfit-latin.woff2" crossorigin>
+  <style>
+@font-face{font-family:"Outfit";src:url("/assets/fonts/outfit-latin.woff2") format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
+:root{
+--primaria:#5E7F62;--secundaria:#D98E6C;--fundo:#F9FAFB;--texto:#111827;--destaque:#A85F42;
+--primaria-escura:#46634A;--primaria-clara:#EEF3EE;--destaque-escuro:#8E4E35;--texto-suave:#4B5563;--linha:#D6E0D7;--branco:#FFFFFF;--sobreposicao:22,33,25;
+--esp-1:8px;--esp-2:16px;--esp-3:24px;--esp-4:32px;--esp-6:48px;--esp-8:64px;--esp-12:96px;
+--fonte-xs:14px;--fonte-base:16px;--fonte-md:18px;--fonte-lg:24px;--fonte-xl:32px;--fonte-2xl:clamp(36px,5vw,56px);
+--lh-texto:1.6;--lh-titulo:1.15;
+--raio-sm:12px;--raio-lg:24px;
+--sombra-1:0 8px 32px rgba(17,24,39,.08);--sombra-2:0 16px 48px rgba(17,24,39,.14);
+--altura-cabecalho:72px;--secao-y:var(--esp-8);
+--fonte:"Outfit","Segoe UI",system-ui,-apple-system,sans-serif}
+@media (min-width:1024px){:root{--secao-y:var(--esp-12)}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--altura-cabecalho) + var(--esp-2));-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fonte);font-size:var(--fonte-base);line-height:var(--lh-texto);color:var(--texto);background:var(--fundo);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+h1,h2,h3{margin:0 0 var(--esp-2);line-height:var(--lh-titulo);font-weight:600;letter-spacing:-.01em}
+h1{font-size:var(--fonte-2xl)}
+h2{font-size:var(--fonte-xl)}
+h3{font-size:var(--fonte-md)}
+p{margin:0 0 var(--esp-2)}
+a{color:var(--primaria-escura);text-underline-offset:3px}
+a:hover{color:var(--destaque)}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible,input:focus-visible{outline:3px solid var(--destaque);outline-offset:3px}
+.container{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.pular-conteudo{position:absolute;left:var(--esp-2);top:-100px;z-index:200;padding:var(--esp-1) var(--esp-2);border-radius:var(--raio-sm);background:var(--texto);color:var(--branco)}
+.pular-conteudo:focus{top:var(--esp-2);color:var(--branco)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--esp-1);min-height:48px;padding:var(--esp-1) var(--esp-3);border:2px solid transparent;border-radius:var(--raio-sm);font:inherit;font-size:var(--fonte-base);font-weight:500;line-height:var(--lh-titulo);text-align:center;text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primario{background:var(--destaque);color:var(--branco)}
+.btn-primario:hover{background:var(--destaque-escuro);color:var(--branco)}
+.btn-contorno-claro{background:transparent;color:var(--branco);border-color:var(--branco)}
+.btn-contorno-claro:hover{background:var(--branco);color:var(--texto)}
+.btn-pequeno{min-height:44px;padding:var(--esp-1) var(--esp-2)}
+.cabecalho{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid transparent;transition:box-shadow .25s,border-color .25s}
+.cabecalho.com-sombra{box-shadow:var(--sombra-1);border-color:var(--linha)}
+.cabecalho-inner{display:flex;align-items:center;gap:var(--esp-2);min-height:var(--altura-cabecalho)}
+.marca{display:inline-flex;align-items:center;gap:var(--esp-1);min-height:44px;margin-right:auto;color:var(--texto);text-decoration:none}
+.marca:hover{color:var(--texto)}
+.marca svg{width:40px;height:40px;flex:none}
+.marca-texto{display:flex;flex-direction:column;line-height:var(--lh-titulo)}
+.marca-nome{font-size:var(--fonte-md);font-weight:600;white-space:nowrap}
+.marca-tag{font-size:var(--fonte-xs);font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--destaque)}
+.menu-desktop{display:none}
+.menu-desktop ul,.menu-mobile ul{list-style:none;margin:0;padding:0}
+.menu-desktop a,.menu-mobile a{display:flex;align-items:center;min-height:44px;padding:0 var(--esp-2);color:var(--texto);font-weight:500;text-decoration:none;border-radius:var(--raio-sm)}
+.menu-desktop a:hover,.menu-mobile a:hover{color:var(--primaria-escura);background:var(--primaria-clara)}
+.cabecalho-cta .rotulo-curto{display:none}
+.menu-mobile summary{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:var(--raio-sm);background:var(--primaria-clara);color:var(--texto);cursor:pointer;list-style:none}
+.menu-mobile summary::-webkit-details-marker{display:none}
+.menu-mobile summary svg{width:24px;height:24px}
+.menu-mobile .icone-fechar,.menu-mobile[open] .icone-abrir{display:none}
+.menu-mobile[open] .icone-fechar{display:block}
+.menu-mobile nav{position:absolute;left:0;right:0;top:100%;padding:var(--esp-1) var(--esp-3) var(--esp-2);background:var(--branco);border-bottom:1px solid var(--linha);box-shadow:var(--sombra-1)}
+.menu-mobile a{min-height:48px;border-bottom:1px solid var(--primaria-clara);border-radius:0;padding:0 var(--esp-1)}
+@media (max-width:479px){.cabecalho-cta .rotulo{display:none}.cabecalho-cta .rotulo-curto{display:inline}.marca svg{width:32px;height:32px}}
+@media (max-width:419px){.cabecalho-inner{gap:var(--esp-1)}.cabecalho-cta{width:44px;padding:0}.cabecalho-cta .rotulo-curto{display:none}}
+@media (min-width:1024px){.menu-desktop{display:block;margin-inline:auto}.menu-desktop ul{display:flex;gap:0}.menu-mobile{display:none}.marca{margin-right:0}}
+/* Menu com 7 itens: sem quebra de linha e itens mais juntos entre 1024 e 1279px */
+.menu-desktop a,.cabecalho-cta{white-space:nowrap}
+@media (min-width:1024px){.menu-desktop a{padding:0 var(--esp-1)}}
+/* Redes sociais no cabeçalho: ao lado da logo a partir de 1280px; no celular, dentro do menu */
+.cabecalho-redes{display:none;list-style:none;margin:0;padding:0;gap:var(--esp-1)}
+.cabecalho-redes a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--linha);color:var(--primaria-escura)}
+.cabecalho-redes a{transition:background-color .2s,border-color .2s}.cabecalho-redes a:hover{background:#DCE7DD;border-color:#C5D6C7;color:var(--primaria-escura)}
+.cabecalho-redes svg{width:20px;height:20px}
+.menu-mobile .menu-redes{display:flex;padding-top:var(--esp-2)}
+.menu-mobile .menu-redes a{min-height:44px;padding:0;border:1px solid var(--linha);border-radius:50%}
+@media (min-width:1280px){.cabecalho-redes{display:flex;margin-left:var(--esp-3)}}
+/* Computador: cabeçalho mais largo que o conteúdo (logo mais à esquerda, WhatsApp mais à direita) */
+@media (min-width:1280px){.cabecalho .container{width:min(1440px,calc(100% - 48px))}}
+  </style>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-logo" viewBox="0 0 48 48"><path d="M24 44c0-14 7-26 19-30 0 15-8 26-19 30z" fill="#5E7F62"/><path d="M24 44c-1-9-7-16-17-18 0 10 7 17 17 18z" fill="#7E9D82"/><circle cx="15" cy="11" r="5" fill="#D98E6C"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-fechar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  </svg>
+  <main class="container pagina-404">
+    <a class="marca" href="/" aria-label="Clara Mendes Nutrição — início">
+      <svg aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="marca-texto" aria-hidden="true"><span class="marca-nome">Clara Mendes</span><span class="marca-tag">Nutrição</span></span>
+    </a>
+    <h1>Página não encontrada</h1>
+    <p>O endereço pode ter mudado ou estar digitado errado.</p>
+    <a class="btn btn-primario" href="/">Voltar ao início</a>
+  </main>
+</body>
+</html>

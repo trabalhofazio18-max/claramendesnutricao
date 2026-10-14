@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Sitemap: https://claramendesnutricao.shop/sitemap.xml
+
+# Permitir crawlers de IA (visibilidade em buscas com IA)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
