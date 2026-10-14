@@ -29,7 +29,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon.png">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/outfit-latin.woff2" crossorigin>
-  <link rel="preload" as="image" href="/assets/img/hero-nutricionista-curitiba-1600.webp" imagesrcset="/assets/img/hero-nutricionista-curitiba-800.webp 800w, /assets/img/hero-nutricionista-curitiba-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/img/hero-nutricionista-curitiba-1600.webp" imagesrcset="/assets/img/hero-nutricionista-curitiba-800.webp 800w, /assets/img/hero-nutricionista-curitiba-1600.webp 1600w" imagesizes="(max-width: 767px) 1000px, 100vw" fetchpriority="high">
   <style>
 @font-face{font-family:"Outfit";src:url("/assets/fonts/outfit-latin.woff2") format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
 :root{
@@ -124,6 +124,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visi
 @media (min-width:768px){.hero-subtitulo-curto{display:none}.hero-subtitulo-completo{display:block}}
 /* Celular com tela baixa (ex.: 360x640): CTA acima do aviso de cookies compacto */
 @media (max-width:767px) and (max-height:700px){.hero{padding-top:var(--esp-2)}.hero .etiqueta{display:none}.hero h1{margin-bottom:var(--esp-1)}.hero-subtitulo{font-size:var(--fonte-base)}.hero-acoes{margin-top:var(--esp-2)}}
+/* Celular (até 767px): camada uniforme mais leve, Clara centralizada atrás do texto e sombra suave no texto */
+@media (max-width:767px){
+.hero::before{background:rgba(var(--sobreposicao),.55)}
+.hero-midia img{object-position:71% center}
+.hero h1,.hero-subtitulo{text-shadow:0 1px 12px rgba(0,0,0,.35)}
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
   <script type="application/ld+json">
@@ -208,7 +214,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visi
     <!-- 1. Hero (R1, imagem fixa) -->
     <section class="hero" id="inicio" aria-labelledby="titulo-hero">
       <div class="hero-midia">
-        <img src="/assets/img/hero-nutricionista-curitiba-1600.webp" srcset="/assets/img/hero-nutricionista-curitiba-800.webp 800w, /assets/img/hero-nutricionista-curitiba-1600.webp 1600w" sizes="100vw" alt="Nutricionista em Curitiba atendendo paciente no consultório no Batel" width="1600" height="900" fetchpriority="high">
+        <img src="/assets/img/hero-nutricionista-curitiba-1600.webp" srcset="/assets/img/hero-nutricionista-curitiba-800.webp 800w, /assets/img/hero-nutricionista-curitiba-1600.webp 1600w" sizes="(max-width: 767px) 1000px, 100vw" alt="Nutricionista em Curitiba atendendo paciente no consultório no Batel" width="1600" height="900" fetchpriority="high">
       </div>
       <div class="container">
         <div class="hero-conteudo">
